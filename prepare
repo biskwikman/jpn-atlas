@@ -1,0 +1,4 @@
+#!/bin/bash
+
+rm -rvf japan
+mkdir -p build japan
