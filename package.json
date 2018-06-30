@@ -9,6 +9,9 @@
     "type": "git",
     "url": "git+https://github.com/biskwikman/jpn-atlas.git"
   },
+  "scripts": {
+    "prepare":"bash prepare"
+  },
   "keywords": [
     "japan",
     "geojson",
