@@ -1,0 +1,27 @@
+{
+  "name": "jpn-atlas",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/biskwikman/jpn-atlas.git"
+  },
+  "keywords": [
+    "japan",
+    "geojson",
+    "topojson",
+    "geospatial",
+    "vector",
+    "boundary"
+  ],
+  "author": "Dan Henri <djosephhenri@gmail.com> (https://github.com/biskwikman/)",
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/biskwikman/jpn-atlas/issues"
+  },
+  "homepage": "https://github.com/biskwikman/jpn-atlas#readme"
+}
