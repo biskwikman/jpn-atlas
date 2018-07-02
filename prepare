@@ -2,3 +2,9 @@
 
 rm -rvf japan
 mkdir -p build japan
+
+if [ ! -f build/gm-jpn-all_u_2_2.shp ]; then
+  curl -o build/gm-jpn-all_u_2_2.zip 'http://www1.gsi.go.jp/geowww/globalmap-gsi/download/data/gm-japan/gm-jpn-all_u_2_2'
+  unzip -od build -j build/gm-jpn-all_u_2_2.zip gm-jpn-all_u_2_2/polbnda_jpn.shp gm-jpn-all_u_2_2/polbnda_jpn.dbf
+  chmod a-x build/gm-jpn-all_u_2_2/polbnda_jpn.*
+fi
