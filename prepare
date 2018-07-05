@@ -8,3 +8,8 @@ if [ ! -f build/gm-jpn-all_u_2_2.shp ]; then
   unzip -od build -j build/gm-jpn-all_u_2_2.zip gm-jpn-all_u_2_2/polbnda_jpn.shp gm-jpn-all_u_2_2/polbnda_jpn.dbf
   chmod a-x build/gm-jpn-all_u_2_2/polbnda_jpn.*
 fi
+
+geo2topo -q 1e5 municipalities=<( \
+  shp2json --encoding utf8 -n build/polbnda_jpn.shp \
+    | ndjson-filter '!/000$/.test(d.properties.laa)' \
+    | ndjson-map '(d.id'
