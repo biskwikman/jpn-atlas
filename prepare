@@ -11,5 +11,4 @@ fi
 
 geo2topo -q 1e5 municipalities=<( \
   shp2json --encoding utf8 -n build/polbnda_jpn.shp \
-    | ndjson-filter '!/000$/.test(d.properties.laa)' \
-    | ndjson-map '(d.id'
+    | ndjson-map '(d.id = d.properties.laa, delete d.properties, d)' \
