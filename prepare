@@ -11,8 +11,10 @@ fi
 
 geo2topo -q 1e5 municipalities=<( \
   shp2json --encoding utf8 -n build/polbnda_jpn.shp \
-    | ndjson-map '(d.id = d.properties.laa, delete d.properties, d)' \
-    | geoproject -n 'd3.geoAzimuthEqualArea().center(138.5, 36 - 18 / 60).scale(1500)' \
+    | ndjson-map '(d.id = d.properties.adm_code, delete d.properties, d)' \
+    | geoproject -n 'd3.geoAzimuthalEqualArea().center([138.5, 36 - 18 / 60]).scale(1500)') \
   | toposimplify -f -p 0.25 \
-  | topomerge municipalities=country \
+  | topomerge prefectures=municipalities -k 'd.id.slice(0, 2)'\
+  | topomerge country=prefectures \
+  > japan.json
 
