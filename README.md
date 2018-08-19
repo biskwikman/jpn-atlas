@@ -7,6 +7,7 @@ The easiest way to get the jpn-atlas data is via [unpkg](https://unpkg.com/jpn-a
 Either of these methods, among others, will allow you to access the boundary data:
 
 In-browser via unpkg method:
+
 '''html
 <!DOCTYPE html>
 <svg width="850" height="680" fill="none" stroke="#000" stroke-linejoin="round" stroke-linecap="round"></svg>
