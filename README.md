@@ -2,11 +2,12 @@
 An easy way to access Japanese geospatial boundary data at the national, prefectural, and municipal levels. 
 The data is taken from the [Geospatial Information Authority of Japan's "Global Map Japan" published in 2016](http://www.gsi.go.jp/kankyochiri/gm_japan_e.html).
 ## Usage
-jpn-atlas is delivered in TopoJSON and made for SVG and Canvas coordinate systems. Because of this, it is convenient to use jpn-atlas to load Japanese geospatial data into a browser application without having to download, convert, simplify, and clean the data yourself, jpn-atlas has already done this for you.
+jpn-atlas is delivered in [TopoJSON](https://github.com/topojson/topojson) file format and made for SVG and Canvas coordinate systems (with the 'y' axis being reversed).
+Because of this, it is convenient to use jpn-atlas to load Japanese geospatial data into a browser application without having to download, convert, simplify, and clean the data yourself, jpn-atlas has already done this for you.
 The easiest way to get the jpn-atlas data is via [unpkg](https://unpkg.com/jpn-atlas/), but you can also install it via [npm](https://www.npmjs.com/package/jpn-atlas) for yourself.
 Either of these methods, among others, will allow you to access the boundary data:
 
-In-browser via unpkg method:
+In-browser via unpkg method, displayed using [D3.js](https://d3js.org/):
 
 ```html
 <!DOCTYPE html>
