@@ -7,7 +7,7 @@ Because of this, it is convenient to use jpn-atlas to load Japanese geospatial d
 The easiest way to get the jpn-atlas data is via [unpkg](https://unpkg.com/jpn-atlas/), but you can also install it via [npm](https://www.npmjs.com/package/jpn-atlas) for yourself.
 Either of these methods, among others, will allow you to access the boundary data:
 
-In-browser via unpkg method, displayed using [D3.js](https://d3js.org/):
+In-browser SVG via [unpkg](https://unpkg.com/jpn-atlas@1.0.0/), displayed using [d3-geo](https://github.com/d3/d3-geo):
 
 ```html
 <!DOCTYPE html>
@@ -39,3 +39,30 @@ d3.json("https://unpkg.com/jpn-atlas@1/japan.json", function(error, japan) {
 
 </script>
 ```
+
+In-browser Canvas via [unpkg](https://unpkg.com/jpn-atlas@1.0.0/), displayed using [d3-geo](https://github.com/d3/d3-geo):
+
+```html
+<!DOCTYPE html>
+nvas width="850" height="680"></canvas>
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script src="https://unpkg.com/topojson-client@3"></script>
+<script>
+
+var context = d3.select("canvas").node().getContext("2d"),
+    path = d3.geoPath().context(context);
+
+d3.json("https://unpkg.com/jpn-atlas@1/japan/japan.json", function(error, japan) {
+  if (error) throw error;
+
+  context.beginPath();
+  path(topojson.mesh(japan));
+  context.stroke();
+});
+
+</script>
+```
+
+## File Reference
+
+
