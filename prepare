@@ -9,12 +9,12 @@ if [ ! -f build/polbnda_jpn.shp ]; then
   chmod a-x build/polbnda_jpn.*
 fi
 
-geo2topo -q 1e6 -n municipalities=<( \
+geo2topo -q 1e5 -n municipalities=<( \
   shp2json -n build/polbnda_jpn.shp \
     | ndjson-map '(d.id = d.properties.adm_code, delete d.properties, d)' \
     | ndjson-filter '(d.id != "UNK")' \
-    | geoproject -n 'd3.geoAzimuthalEqualArea().center([138.5, 36 - 18 / 60]).rotate([-138.5, -36 + 18 / 60]).scale(1500)') \
-  | toposimplify -f -p 0.0005 \
+    | geoproject -n 'd3.geoAzimuthalEqualArea().center([138.5, 36 - 18 / 60]).rotate([-138.5, -36 + 18 / 60]).scale([1700]).translate([2500, -1930])') \
+  | toposimplify -f -p 0.001 \
   | topomerge prefectures=municipalities -k 'd.id.slice(0, 2)' \
   | topomerge country=prefectures \
   > japan/japan.json
