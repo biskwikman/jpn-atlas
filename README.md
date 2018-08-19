@@ -74,4 +74,16 @@ Prefecture boundaries are computed by [merging](https://github.com/topojson/topo
 
 <a href="#japan/japan.json_municipalities" name="japan/japan.json_municipalities">#</a> *japan*.objects.<b>municipalities</b>
 
-<img src="https://raw.githubusercontent.com/biskwikman/jpn-atlas/master/img/japan-counties.png" width="850" height="680">
+<img src="https://raw.githubusercontent.com/biskwikman/jpn-atlas/master/img/japan-municipalities.png" width="850" height="680">
+
+<a href="#japan/japan.json_prefectures" name="japan/japan.json_prefectures">#</a> *japan*.objects.<b>prefectures</b>
+
+<img src="https://raw.githubusercontent.com/biskwikman/jpn-atlas/master/img/japan-prefectures.png" width="850" height="680">
+
+<a href="#japan/japan.json_country" name="japan/japan.json_country">#</a> *japan*.objects.<b>country</b>
+
+<img src="https://raw.githubusercontent.com/biskwikman/jpn-atlas/master/img/japan-country.png" width="850" height="680">
+
+#### Acknowledgment
+
+This whole projects is inpsired by / stolen from [us-atlas](https://github.com/topojson/us-atlas), which is produces US county, state, and nation data.
