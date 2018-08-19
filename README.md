@@ -74,4 +74,4 @@ Prefecture boundaries are computed by [merging](https://github.com/topojson/topo
 
 <a href="#japan/japan.json_municipalities" name="japan/japan.json_municipalities">#</a> *japan*.objects.<b>municipalities</b>
 
-<img src="https://raw.githubusercontent.com/biskwikman/jpn-atlas/master/img/japan-counties.png" width="480" height="300">
+<img src="https://raw.githubusercontent.com/biskwikman/jpn-atlas/master/img/japan-counties.png" width="850" height="680">
