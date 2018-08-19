@@ -65,4 +65,13 @@ d3.json("https://unpkg.com/jpn-atlas@1/japan/japan.json", function(error, japan)
 
 ## File Reference
 
-<a href="#japan/japan.json" name="japan.json">#</a> <b>japan.json</b> [<>](https://unpkg.com/jpn-atlas@1/japan/japan.json "Source")
+<a href="#japan/japan.json" name="japan.json">#</a> <b>japan/japan.json</b> [<>](https://unpkg.com/jpn-atlas@1/japan/japan.json "Source")
+
+This file is a [TopoJSON *topology*](https://github.com/topojson/topojson-specification/blob/master/README.md#21-topology-objects) containing three geometry collections: <i>municipalities</i>, <i>prefectures</i>, and <i>country</i>. 
+The geometry is quantized using [topojson-client](https://github.com/topojson/topojson-client/blob/master/README.md#quantize), projected using [d3.geoAzimuthalEqualArea](https://github.com/d3/d3-geo#geoAzimuthalEqualArea), projected to fit a 850x680 viewport, and simplified. 
+The topology is derived from the Geospatial Information Authority of Japan's [Global Map Japan](http://www.gsi.go.jp/kankyochiri/gm_japan_e.html), published in 2016. 
+Prefecture boundaries are computed by [merging](https://github.com/topojson/topojson-client/blob/master/README.md#merge) municipalities, and country boundaries are computed by merging prefectures.
+
+<a href="#japan/japan.json_municipalities" name="japan/japan.json_municipalities">#</a> *japan*.objects.<b>municipalities</b>
+
+<img src="https://raw.githubusercontent.com/biskwikman/jpn-atlas/master/img/japan-counties.png" width="480" height="300">
