@@ -8,7 +8,7 @@ Either of these methods, among others, will allow you to access the boundary dat
 
 In-browser via unpkg method:
 
-'''html
+```html
 <!DOCTYPE html>
 <svg width="850" height="680" fill="none" stroke="#000" stroke-linejoin="round" stroke-linecap="round"></svg>
 <script src="https://d3js.org/d3.v4.min.js"></script>
@@ -37,4 +37,4 @@ d3.json("https://unpkg.com/jpn-atlas@1/japan.json", function(error, japan) {
 });
 
 </script>
-'''
+```
