@@ -68,9 +68,11 @@ d3.json("https://unpkg.com/jpn-atlas@1/japan/japan.json", function(error, japan)
 <a href="#japan/japan.json" name="japan.json">#</a> <b>japan/japan.json</b> [<>](https://unpkg.com/jpn-atlas@1/japan/japan.json "Source")
 
 This file is a [TopoJSON *topology*](https://github.com/topojson/topojson-specification/blob/master/README.md#21-topology-objects) containing three geometry collections: <i>municipalities</i>, <i>prefectures</i>, and <i>country</i>. 
-The geometry is quantized using [topojson-client](https://github.com/topojson/topojson-client/blob/master/README.md#quantize), projected using [d3.geoAzimuthalEqualArea](https://github.com/d3/d3-geo#geoAzimuthalEqualArea), projected to fit a 850x680 viewport, and simplified. 
+The geometry is quantized using [topojson-client](https://github.com/topojson/topojson-client/blob/master/README.md#quantize), projected using [d3.geoAzimuthalEqualArea](https://github.com/d3/d3-geo#geoAzimuthalEqualArea) to fit a 850x680 viewport, and simplified. 
 The topology is derived from the Geospatial Information Authority of Japan's [Global Map Japan](http://www.gsi.go.jp/kankyochiri/gm_japan_e.html), published in 2016. 
 Prefecture boundaries are computed by [merging](https://github.com/topojson/topojson-client/blob/master/README.md#merge) municipalities, and country boundaries are computed by merging prefectures.
+
+The TopoJSON data assigns each municipality and prefecture an administrative code that can be found under the `id` feature. For instance, the administrative code for Sapporo City is 01100. So the Sapporo feature has an associated `id : 01100` object within it. [The official source for the administrative codes](http://www.soumu.go.jp/denshijiti/code.html) is only in Japanese. However, Nobu Funaki has a created a handy github repository called [list-og-cities-in-japan](https://github.com/nobuf/list-of-cities-in-japan), which generates this information in English.
 
 <a href="#japan/japan.json_municipalities" name="japan/japan.json_municipalities">#</a> *japan*.objects.<b>municipalities</b>
 
@@ -90,4 +92,4 @@ If anyone is interested in contributing go ahead and submit a pull request or ha
 
 #### Acknowledgment
 
-This whole projects is inpsired by / stolen from [us-atlas](https://github.com/topojson/us-atlas), which is produces US county, state, and nation data.
+This whole project is inpsired by / stolen from [us-atlas](https://github.com/topojson/us-atlas), which produces US county, state, and nation data.
