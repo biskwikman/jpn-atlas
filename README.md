@@ -88,7 +88,7 @@ The TopoJSON data assigns each municipality and prefecture an administrative cod
 
 ### Contributing
 
-If anyone is interested in contributing go ahead and submit a pull request or have a look at any of the issues and comment on them.
+If anyone is interested in contributing go ahead and open an issue or comment on an existing one. Any and all help and ideas are welcome.
 
 #### Acknowledgment
 
