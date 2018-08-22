@@ -1,4 +1,6 @@
-# Japan Atlas TopoJSON
+# Japan Atlas TopoJSON / 日本アトラスTopoJSON
+便利な日本の国、都道府県、地方公共団体のレベルで堺データをもらい方です。
+このデータの元は[国土地理院の地球地図ー2016](http://www.gsi.go.jp/kankyochiri/gm_jpn.html).
 An easy way to access Japanese geospatial boundary data at the national, prefectural, and municipal levels. 
 The data is taken from the [Geospatial Information Authority of Japan's "Global Map Japan" published in 2016](http://www.gsi.go.jp/kankyochiri/gm_japan_e.html).
 ## Usage
