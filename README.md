@@ -16,6 +16,9 @@ Because of this, it is convenient to use jpn-atlas to load Japanese geospatial d
 The easiest way to get the jpn-atlas data is via [unpkg](https://unpkg.com/jpn-atlas/), but you can also install it via [npm](https://www.npmjs.com/package/jpn-atlas) for yourself.
 Either of these methods, among others, will allow you to access the boundary data:
 
+### Example / 例
+
+[unpkg](https://unpkg.com/jpn-atlas@1.0.0/)からブラウザのSVGで、[d3-geo](https://github.com/d3/d3-geo)でデータが表示される：
 In-browser SVG via [unpkg](https://unpkg.com/jpn-atlas@1.0.0/), displayed using [d3-geo](https://github.com/d3/d3-geo):
 
 ```html
@@ -49,6 +52,7 @@ d3.json("https://unpkg.com/jpn-atlas@1/japan.json", function(error, japan) {
 </script>
 ```
 
+[unpkg](https://unpkg.com/jpn-atlas@1.0.0/)からブラウザのCanvasで、[d3-geo](https://github.com/d3/d3-geo)でデータが表示される：
 In-browser Canvas via [unpkg](https://unpkg.com/jpn-atlas@1.0.0/), displayed using [d3-geo](https://github.com/d3/d3-geo):
 
 ```html
