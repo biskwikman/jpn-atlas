@@ -19,6 +19,7 @@ Either of these methods, among others, will allow you to access the boundary dat
 ### Example / 例
 
 [unpkg](https://unpkg.com/jpn-atlas@1.0.0/)からブラウザのSVGで、[d3-geo](https://github.com/d3/d3-geo)でデータが表示される：
+
 In-browser SVG via [unpkg](https://unpkg.com/jpn-atlas@1.0.0/), displayed using [d3-geo](https://github.com/d3/d3-geo):
 
 ```html
@@ -53,6 +54,7 @@ d3.json("https://unpkg.com/jpn-atlas@1/japan.json", function(error, japan) {
 ```
 
 [unpkg](https://unpkg.com/jpn-atlas@1.0.0/)からブラウザのCanvasで、[d3-geo](https://github.com/d3/d3-geo)でデータが表示される：
+
 In-browser Canvas via [unpkg](https://unpkg.com/jpn-atlas@1.0.0/), displayed using [d3-geo](https://github.com/d3/d3-geo):
 
 ```html
