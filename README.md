@@ -8,7 +8,8 @@ The data is taken from the [Geospatial Information Authority of Japan's "Global 
 
 ## Usage / 用いること
 
-jpn-atlasは[TopoJSON](https://github.com/topojson/topojson)フォーマットで届けられます。SVGとかCanvasなどの座標系のために作られました。このためダウンロード、変換、簡略、または掃除しなくて便利に使える。
+jpn-atlasは[TopoJSON](https://github.com/topojson/topojson)フォーマットで届けられます。SVGとかCanvasなどの座標系のために作られました。このためダ、ウンロード、変換、簡略、または掃除しなくて便利に使える。
+データは一番簡単なもらう方法が[unpkg](https://unpkg.com/jpn-atlas/)からです。そろとも、[npm](https://www.npmjs.com/package/jpn-atlas)から自分でインストールできます。
 
 jpn-atlas is delivered in [TopoJSON](https://github.com/topojson/topojson) file format and made for SVG and Canvas coordinate systems (with the 'y' axis being reversed).
 Because of this, it is convenient to use jpn-atlas to load Japanese geospatial data into a browser application without having to download, convert, simplify, and clean the data yourself, jpn-atlas has already done this for you.
