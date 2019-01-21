@@ -13,7 +13,7 @@ TopoJSONは、SVGやCanvasなどの座標系のために作られています。
 そのため、ダウンロードや変換、簡略化、投影、クリーンアップの必要がなく、便利に使えます。
 もっとも簡単にデータを取得する方法は、[unpkg](https://unpkg.com/jpn-atlas/)を使う方法です。
 または、[npm](https://www.npmjs.com/package/jpn-atlas)から自分でインストールすることもできます。
-どちらの方法であれ、境界データにアクセス可能です。
+どちらの方法でも、境界データにアクセス可能です。
 
 jpn-atlas is delivered in [TopoJSON](https://github.com/topojson/topojson) file format and made for SVG and Canvas coordinate systems (with the 'y' axis being reversed).
 Because of this, it is convenient to use jpn-atlas to load Japanese geospatial data into a browser application without having to download, convert, simplify, and clean the data yourself, jpn-atlas has already done this for you.
@@ -22,7 +22,7 @@ Either of these methods, among others, will allow you to access the boundary dat
 
 ### Example / 例
 
-[unpkg](https://unpkg.com/jpn-atlas@1.0.0/)からブラウザのSVGで、[d3-geo](https://github.com/d3/d3-geo)でデータが表示される：
+[unpkg](https://unpkg.com/jpn-atlas@1.0.0/)から得たデータを、[d3-geo](https://github.com/d3/d3-geo)を使ってブラウザのSVGに表示しています。
 
 In-browser SVG via [unpkg](https://unpkg.com/jpn-atlas@1.0.0/), displayed using [d3-geo](https://github.com/d3/d3-geo):
 
@@ -94,6 +94,7 @@ d3.json("https://unpkg.com/jpn-atlas@1/japan/japan.json", function(error, japan)
 
 このTopoJSONデータには、各都道府県と市区町村の`id`プロパティ[全国地方公共団体コード](http://www.soumu.go.jp/denshijiti/code.html)が付いています。
 例えば、札幌市のコードは01100のため、札幌市のfeatureのなかで`id : 01100`のプロパティがついています。
+公式の[全国地方公共団体コード](http://www.soumu.go.jp/denshijiti/code.html)は日本語しかありませんが、Nobu Funakiが英語の情報を生成するgithubリポジトリ[list-og-cities-in-japan](https://github.com/nobuf/list-of-cities-in-japan)を公開しています。
 
 This file is a [TopoJSON *topology*](https://github.com/topojson/topojson-specification/blob/master/README.md#21-topology-objects) containing three geometry collections: <i>municipalities</i>, <i>prefectures</i>, and <i>country</i>.
 The geometry is quantized using [topojson-client](https://github.com/topojson/topojson-client/blob/master/README.md#quantize), projected using [d3.geoAzimuthalEqualArea](https://github.com/d3/d3-geo#geoAzimuthalEqualArea) to fit a 850x680 viewport, and simplified.
