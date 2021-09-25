@@ -39,7 +39,7 @@ var svg = d3.select("svg");
 
 var path = d3.geoPath();
 
-d3.json("https://unpkg.com/jpn-atlas@1/japan.json", function(error, japan) {
+d3.json("https://unpkg.com/jpn-atlas@1/japan/japan.json", function(error, japan) {
   if (error) throw error;
 
   svg.append("path")
