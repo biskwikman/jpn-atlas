@@ -65,7 +65,7 @@ In-browser Canvas via [unpkg](https://unpkg.com/jpn-atlas@1.0.0/), displayed usi
 
 ```html
 <!DOCTYPE html>
-nvas width="850" height="680"></canvas>
+<canvas width="850" height="680"></canvas>
 <script src="https://d3js.org/d3.v4.min.js"></script>
 <script src="https://unpkg.com/topojson-client@3"></script>
 <script>
