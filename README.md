@@ -39,7 +39,7 @@ var svg = d3.select("svg");
 
 var path = d3.geoPath();
 
-d3.json("https://unpkg.com/jpn-atlas@1/japan.json", function(error, japan) {
+d3.json("https://unpkg.com/jpn-atlas@1/japan/japan.json", function(error, japan) {
   if (error) throw error;
 
   svg.append("path")
@@ -65,7 +65,7 @@ In-browser Canvas via [unpkg](https://unpkg.com/jpn-atlas@1.0.0/), displayed usi
 
 ```html
 <!DOCTYPE html>
-nvas width="850" height="680"></canvas>
+<canvas width="850" height="680"></canvas>
 <script src="https://d3js.org/d3.v4.min.js"></script>
 <script src="https://unpkg.com/topojson-client@3"></script>
 <script>
