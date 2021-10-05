@@ -1,5 +1,3 @@
-[![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/H2H21PP1F)
-
 # Japan Atlas TopoJSON / 日本地図 TopoJSON
 
 日本の国、都道府県、市区町村レベルの境界データをすばやく取得します。
